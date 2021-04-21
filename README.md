@@ -1,8 +1,14 @@
 # Deep Learning and the Game of Go - Clojure implementation
 
+A go board game implementation.
+
 Based on the great book:
 
 https://github.com/maxpumperla/deep_learning_and_the_game_of_go
+
+See exercises
+
+https://github.com/danielmarreirosdeoliveira/exercises/blob/master/dlgo/README.md
 
 ## Start
 
@@ -23,5 +29,45 @@ Then run `java -cp `clj -Spath` go.go`
 
 ### Test
 
+<<<<<<< HEAD
     $ clj -A test
     
+=======
+```
+rlwrap clojure -C:test
+```
+
+or
+
+```
+clojure -Ctest test/go/all_tests.clj
+```
+
+#### Run a single test
+
+```
+user=> (use 'clojure.test)
+user=> (use 'go.board-test :reload-all)
+user=> (run-tests 'go.board-test)
+Testing board-test
+
+Ran 4 tests containing 4 assertions.
+0 failures, 0 errors.
+{:test 4, :pass 4, :fail 0, :error 0, :type :summary}
+```
+
+#### Run all tests
+
+```
+user=> (use 'go.all-tests :reload-all)
+Testing board-test
+
+Testing move-test
+
+Testing board-test-helper
+
+Ran 12 tests containing 12 assertions.
+0 failures, 0 errors.
+nil
+```
+>>>>>>> 702e313615728100108a1f3b251a46fa7c6ea0f5
