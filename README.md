@@ -30,4 +30,3 @@ Then run `java -cp `clj -Spath` go.go`
 ### Test
 
     $ clj -A test
-    
