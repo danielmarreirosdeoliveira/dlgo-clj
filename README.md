@@ -25,7 +25,9 @@ Create an empty classes dir and remove the call to -main in go.go
 user=> (compile 'go.go)
 ```
 
-Then run `java -cp `clj -Spath` go.go`
+Then run 
+
+    java -cp `clj -Spath` go.go
 
 ### Test
 
